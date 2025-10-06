@@ -1,0 +1,22 @@
+<div class="contact-container">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-grid">
+    @for (partner of partners; track partner.email) {
+      <div class="contact-card">
+        <i class="fas fa-user"></i>
+        <h3>{{ partner.name }}</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> {{ partner.phone }}</p>
+          <p><i class="fas fa-envelope"></i> {{ partner.email }}</p>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="text-center">
+    <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="social-link">
+      <i class="fab fa-facebook"></i> Urmărește-ne pe Facebook
+    </a>
+  </div>
+</div>

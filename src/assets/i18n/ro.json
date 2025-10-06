@@ -1,0 +1,29 @@
+{
+  "NAV": {
+    "HOME": "Acasă",
+    "PORTFOLIO": "Portofoliu",
+    "ABOUT": "Despre Noi",
+    "CONTACT": "Contact"
+  },
+  "HOME": {
+    "WELCOME": "Bine ați venit la compania noastră",
+    "SUBTITLE": "Soluții inovatoare pentru afacerea ta"
+  },
+  "ABOUT": {
+    "TITLE": "Despre Noi",
+    "MISSION": "Misiunea Noastră",
+    "VISION": "Viziunea Noastră",
+    "TEAM": "Echipa Noastră"
+  },
+  "PORTFOLIO": {
+    "TITLE": "Portofoliu",
+    "VIEW_MORE": "Vezi mai mult"
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "FOLLOW_US": "Urmărește-ne pe Facebook"
+  },
+  "FOOTER": {
+    "RIGHTS": "Toate drepturile rezervate"
+  }
+}

@@ -1,0 +1,21 @@
+footer {
+  background: linear-gradient(to top, #668B3F, #556B2F); /* Degradado verde oliva */
+  color: #D3D3D3;
+  padding: 1rem 0;
+  margin-top: auto;
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  text-align: center;
+}
