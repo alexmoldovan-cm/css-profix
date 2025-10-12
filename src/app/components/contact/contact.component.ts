@@ -11,21 +11,21 @@ import { CommonModule } from '@angular/common';
 export class ContactComponent {
   partners = [
     {
-      name: 'Alexandru Popescu',
-      phone: '+40 123 456 789',
-      email: 'alexandru@css-profix.com'
+      name: 'Gabor Szabolocs',
+      phone: '+40 746 628 779',
+      email: 'cssprofix@gmail.com'
     },
     {
-      name: 'Maria Ionescu',
-      phone: '+40 987 654 321',
-      email: 'ana@css-profix.com'
+      name: 'Pop Sabin',
+      phone: '+40 725 810 750',
+      email: 'cssprofix@gmail.com'
     },
     {
-      name: 'Ion Dumitrescu',
-      phone: '+40 456 789 123',
-      email: 'ion@css-profix.com'
+      name: 'Szell Csongor',
+      phone: '+40 755 410 422',
+      email: 'cssprofix@gmail.com'
     }
   ];
 
-  facebookUrl = 'https://facebook.com/css-profix';
+  facebookUrl = 'https://www.facebook.com/profile.php?id=61578599355216';
 }

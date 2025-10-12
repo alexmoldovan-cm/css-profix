@@ -1,7 +1,10 @@
 nav {
-  background: linear-gradient(to bottom, #668B3F, #556B2F); /* Degradado verde oliva */
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  background: linear-gradient(to bottom, #556B2F, #445624);
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-content {
@@ -10,13 +13,40 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.25rem 0;
 }
 
 .logo {
-  color: #FFD700; /* Amarillo */
-  font-size: 1.5rem;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   text-decoration: none;
+  padding: 0.25rem 0;
+  height: 50px;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+.logo-text {
+  color: #FFD700;
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
 }
 
 .nav-links {
@@ -55,14 +85,39 @@ nav {
 }
 
 @media (max-width: 768px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
   .nav-content {
-    flex-direction: column;
+    flex-direction: row; /* Mantener en fila para pantallas hasta 768px */
     gap: 1rem;
   }
-  
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
   .nav-links {
-    flex-direction: column;
-    align-items: center;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    height: 36px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .nav-links {
     gap: 1rem;
+    font-size: 0.9rem;
   }
 }

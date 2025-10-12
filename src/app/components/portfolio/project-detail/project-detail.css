@@ -1,0 +1,258 @@
+.project-detail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom, rgba(85,107,47,0.05), rgba(102,139,63,0.02));
+  min-height: 100vh;
+}
+
+.project-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
+}
+
+.project-hero h1 {
+  font-size: 2.8rem;
+  color: #556B2F;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Gallery Styles */
+.gallery-container {
+  margin-bottom: 4rem;
+}
+
+.main-image {
+  position: relative;
+  width: 100%;
+  max-height: 80vh;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(85,107,47,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(85,107,47,0.8);
+  color: #FFD700;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.nav-btn:hover {
+  background: #556B2F;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.nav-btn:disabled {
+  background: rgba(85,107,47,0.3);
+  cursor: not-allowed;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #556B2F #f0f0f0;
+}
+
+.thumbnail {
+  flex: 0 0 150px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+
+.thumbnail.active {
+  border-color: #FFD700;
+  transform: scale(1.05);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Project Info Styles */
+.project-info {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(85,107,47,0.1);
+}
+
+.info-section {
+  margin-bottom: 3rem;
+}
+
+.info-section h2 {
+  color: #556B2F;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-features {
+  margin-bottom: 3rem;
+}
+
+.project-features h3 {
+  color: #556B2F;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.project-features li::before {
+  content: '•';
+  color: #FFD700;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.project-metadata {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(85,107,47,0.05), rgba(102,139,63,0.1));
+  border-radius: 15px;
+}
+
+.metadata-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metadata-item .label {
+  color: #556B2F;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Back Button Styles */
+.back-button-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #556B2F;
+  color: #FFD700;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #668B3F;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(85,107,47,0.2);
+}
+
+@media (max-width: 768px) {
+  .project-hero h1 {
+    font-size: 2rem;
+  }
+
+  .main-image {
+    height: 400px;
+  }
+
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .thumbnail {
+    flex: 0 0 120px;
+    height: 80px;
+  }
+
+  .project-info {
+    padding: 1.5rem;
+  }
+
+  .project-metadata {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

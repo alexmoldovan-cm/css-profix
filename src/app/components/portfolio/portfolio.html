@@ -3,7 +3,7 @@
   
   <div class="projects-grid">
     @for (project of projects; track project.title) {
-      <div class="project-card" tabindex="0">
+      <div class="project-card" tabindex="0" [routerLink]="['/project', project.id]" style="cursor: pointer">
         <div class="project-image">
           <img [src]="project.image" [alt]="project.title">
         </div>
